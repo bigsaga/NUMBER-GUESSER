@@ -46,13 +46,13 @@ def generate_random_number(guess_range):
 
     # Determine if the guess is correct
         if user_guess == generate_number:
-        print(GREEN, f'Hurray!!!!, You Guess Is Correct')
-        break
+            print(GREEN, f'Hurray!!!!, You Guess Is Correct')
+            break
         elif user_guess > generate_number:
-        print(YELLOW, ' Your Guess Is Too High, Try Again')
-        user_chance -= 1
+            print(YELLOW, ' Your Guess Is Too High, Try Again')
+            user_chance -= 1
         elif user_guess < generate_number:
-        print(YELLOW, 'Your Guess Too Low, Try Again')
+         print(YELLOW, 'Your Guess Too Low, Try Again')
     # reduce the number of chance and prompt user chance lef
         user_chance -= 1
         print(f'Number Of Chance Left Is {user_chance}')
@@ -61,3 +61,5 @@ def generate_random_number(guess_range):
     # inform user of thr correct guess number
     if user_chance == 0:
         print(RED, F'sorry The Correct Guess Is {generate_number}')
+
+welcome_screen()
